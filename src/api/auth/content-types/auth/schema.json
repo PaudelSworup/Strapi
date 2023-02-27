@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auths",
+  "info": {
+    "singularName": "auth",
+    "pluralName": "auths",
+    "displayName": "Auth",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    },
+    "faculty": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "semester": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    }
+  }
+}
